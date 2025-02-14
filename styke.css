@@ -42,3 +42,7 @@ h3.price-produto > span{
   border-radius: 50% ;
   color: white;
 }
+
+.soma-produto{
+    margin: 20px;
+}
