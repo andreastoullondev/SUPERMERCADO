@@ -1,0 +1,18 @@
+header{
+    background-color: cyan;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+.lista-cadastro{
+    display: flex;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.lista-cadastro input[type=text]{
+    flex: 1;
+    height: 40px;
+    padding-left: 20px;
+}
