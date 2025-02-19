@@ -10,5 +10,26 @@ document.querySelector('input[type=submit]').addEventListener('click', () => {
         valor: precoProduto.value
     });
 
+    /*    <div class="lista-produto-single">
+            <h3>`+val.nome+`</h3>
+            <h3 class="price-produto"><span>`+val.valor+`</span></h3>
+        </div>
+    */
+
+    let listaProdutos = document.querySelector('.lista-produtos')
+    listaProdutos.innerHTML = "";
+        items.map(function(val){
+            listaProdutos.innerHTML+= `
+
+            <div class="lista-produto-single">
+            <h3>`+val.nome+`</h3>
+            <h3 class="price-produto"><span>R$`+val.valor+`</span></h3>
+            </div>
+
+            `;
+        });
+
     
+    nomeProduto.value = "";
+    precoProduto.value = "";
 });
